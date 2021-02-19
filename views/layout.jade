@@ -1,0 +1,13 @@
+<!--Este layout guarda el head y los links de los css de las distintas ventanas, en cada ventana que utiliza este layout se hace un llamdo con extends
+y despues se colocan los elemntos de la página como los inputs, labels, etc.-->
+doctype html
+html
+  head
+    <meta charset="utf-8">
+    <title>Proyecto analisis</title>
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/sb-admin-2.min.css">
+    
+  <body class="bg-gradient-primary">
+  form(action="/login/Login", method="post")
+    block content

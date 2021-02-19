@@ -1,0 +1,28 @@
+    image: node:latest
+
+    services:
+      - mysql:latest
+
+    stages:
+      - build
+      - test
+      - deploy
+
+    cache:
+      paths:
+        - node_modules/
+
+    install_dependencies:
+      stage: build
+      script: npm install
+      artifacts:
+        paths:
+          - node_modules/
+
+    testing_testing:
+      stage: test
+      script: npm test
+
+    Deploy_Application:
+      stage: deploy
+      script: npm start

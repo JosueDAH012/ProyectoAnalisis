@@ -1,0 +1,7 @@
+<!--Esta pagina funciona para mostarr cualquier error que pueda ocurrir durante la ejecucion del programa-->
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}

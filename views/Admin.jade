@@ -1,0 +1,95 @@
+<!--El extends layout lla ma al layout que contiene los links de los css y js que va a utilizar esta pagina-->
+extends AddUserLayout
+
+block content
+
+    <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="card-body p-0">
+    <div class="row">
+    <div href="" class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+    <div class="col-lg-7">
+    <div class="p-5">
+    <div class="text-center">
+    <h1 class="h4 text-gray-900 mb-4">Crear un nuevo usuario!</h1>
+    </div>
+    <form class="user">
+    <div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+    <input required type="text" pattern="[0-9]{9}" class="form-control form-control-user" name="id" placeholder="Cedula">
+    </div>
+    <div class="col-sm-6">
+    <input required type="text" class="form-control form-control-user" name="nom" placeholder="Nombre">
+    </div>
+    </div>
+    <div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+    <input required type="text" class="form-control form-control-user" name="ape1"  placeholder="Primer Apellido">
+    </div>
+    <div class="col-sm-6">
+    <input required type="text" class="form-control form-control-user" name="ape2" placeholder="Segundo apellido">
+    </div>
+    </div>
+    <div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+    <input required type="text" class="form-control form-control-user" name="prov" placeholder="Provincia">
+    </div>
+    <div class="col-sm-6">
+    <input required type="text" class="form-control form-control-user" name="cant" placeholder="Canton">
+    </div>
+    </div>
+    <div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+    <input required type="text" class="form-control form-control-user" name="dist" placeholder="Distrito">
+    </div>
+    <div class="col-sm-6">
+    <input required type="text" class="form-control form-control-user" name="dir" placeholder="Direccion">
+    </div>
+    </div>
+    <div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+    <input required type="tel" pattern="[0-9]{8}" class="form-control form-control-user" name="tel" placeholder="Telefono ej: 88888888">
+    </div>
+    <div class="col-sm-6">
+    <input required type="mail" class="form-control form-control-user" name="mail" placeholder="Correo electronico">
+    </div>
+    </div>
+    <div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+    <input required min="0" max="6" type="number" class="form-control form-control-user" name="rol" placeholder="Rol (1,2,3,4,5 o 6)">
+    </div>
+    <div class="col-sm-6">
+    <input required type="text" pattern= Activo||Inactivo  class="form-control form-control-user" name="estado" placeholder="Estado(Activo o Inactivo)">
+    </div>
+    </div>
+    <button type="submit" class="btn btn-success btn-user btn-block">Agregar Usuario
+    </button>
+    <br>
+    p #{msg}
+    <hr>
+    <a href="/reg/GetReg">
+    <button  type="button"  class="btn btn-primary btn-user btn-block">Actualizar Usuario
+    </button>
+    </a>
+    <hr>
+    <a href="/">
+    <button  type="button"  class="btn btn-danger btn-user btn-block">Cerrar Sesion
+    </button>
+    </a>
+    </form>
+    <hr>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="js/sb-admin-2.min.js"></script>
